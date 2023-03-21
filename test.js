@@ -12,11 +12,9 @@
 
 //create a function signature
 function checkAge(name, age) {
-    if (age < 21) {
-        return "Welcome," + name + "!"
-
-    }
-    return "Go Home," + name + "!"
+    //check age whether the age is 21
+    return age >= 21 ? "Welcome," + name + "!" : "Go back home," + name + "!";
+    //if age is 21 welcome msg should be displayed, if not Go back home
 }
 console.log(checkAge("Louis", 33));
 console.log(checkAge("Ajay", 20)); 
