@@ -8,3 +8,6 @@ function isOddLength(word) {
 }
 
 console.log("Result - ", isOddLength('special'));
+console.log("Result1 - ", isOddLength('Raja'));
+console.log("Result2 - ", isOddLength(''));
+
