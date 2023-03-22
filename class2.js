@@ -25,3 +25,25 @@ function average(num1, num2) {
 console.log("Result- ", average(4, 6));
 console.log("Result - ", average(10, 65));
 
+//Problem 3:
+
+//Write a function called "computeAreaOfATriangle".
+//Given the base and height of a triangle, "computeAreaOfATriangle" returns its area.
+//var output = computeAreaOfATriangle(4, 6);
+//console.log(output); // --> 12
+
+function computeAreaOfATriangle(base, height) {
+    if (typeof base !== 'number' || typeof height !== 'number') {
+        return 'Error: Both arguments must be numbers';
+    }
+    return (base * height) / 2;
+}
+
+
+
+console.log("Area of triange", computeAreaOfATriangle(4, 6));
+console.log("Area of triangle", computeAreaOfATriangle("one", "two"));
+console.log("Area of triangle", computeAreaOfATriangle(-1, -5));
+
+
+
