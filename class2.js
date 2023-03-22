@@ -4,7 +4,7 @@
 //console.log(output); // --> true
 //Problem 1:
 function isOddLength(word) {
-    return word.length % 2 === 1;
+    return word.length % 2 !== 0;
 }
 
 console.log("Result - ", isOddLength('special'));
@@ -19,11 +19,11 @@ console.log("Result2 - ", isOddLength(''));
 //console.log(output); // --> 5
 
 function average(num1, num2) {
-    return (num1 + num2) / 2
+    return (num1 + num2) / 2;
 }
 
-console.log("Result- ", average(4, 6));
-console.log("Result - ", average(10, 65));
+console.log("Result- ", average(4, 7));
+console.log("Result - ", average(10, 66));
 
 //Problem 3:
 
@@ -33,17 +33,15 @@ console.log("Result - ", average(10, 65));
 //console.log(output); // --> 12
 
 function computeAreaOfATriangle(base, height) {
-    if (typeof base !== 'number' || typeof height !== 'number') {
+    if (typeof base !== 'number' && typeof height !== 'number') {
         return 'Error: Both arguments must be numbers';
     }
     return (base * height) / 2;
 }
 
-
-
 console.log("Area of triange", computeAreaOfATriangle(4, 6));
-console.log("Area of triangle", computeAreaOfATriangle("one", "two"));
+console.log("Area of triangle", computeAreaOfATriangle("one", 1));
+console.log("Area of triangle", computeAreaOfATriangle("One", "Two"));
 console.log("Area of triangle", computeAreaOfATriangle(-1, -5));
-
 
 
