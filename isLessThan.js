@@ -6,6 +6,6 @@ function isLessThan(num1, num2) {
 //   var output = isLessThan(9, 4);
 //   console.log(output); 
 
-// Test whether num2 is less than num1
+// Test whether num2 i s less than num1
 console.log("Result -", isLessThan(2, 4));
 
